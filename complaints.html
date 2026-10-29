@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Complaints - OCMS</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="topbar"><div class="brand">OCMS</div><a href="student.html" class="logout">← Dashboard</a></header>
+<main class="content standalone">
+<div class="page-title"><div><h1>My Complaints</h1><p>Search and track submitted complaints.</p></div><a href="complaint.html" class="btn btn-primary">+ New Complaint</a></div>
+<section class="card">
+<div class="filters"><input id="search" placeholder="Search complaint..."><select id="statusFilter"><option value="">All Status</option><option>Pending</option><option>Assigned</option><option>In Progress</option><option>Resolved</option><option>Closed</option></select><select id="priorityFilter"><option value="">All Priorities</option><option>Low</option><option>Medium</option><option>High</option><option>Urgent</option></select></div>
+<div class="table-wrap"><table id="complaintTable"><thead><tr><th>ID</th><th>Subject</th><th>Department</th><th>Priority</th><th>Status</th><th>Date</th></tr></thead>
+<tbody>
+<tr><td>#CMP1001</td><td>Classroom projector not working</td><td>IT</td><td><span class="priority high">High</span></td><td><span class="status progress">In Progress</span></td><td>24 Aug 2026</td></tr>
+<tr><td>#CMP1002</td><td>Water cooler issue</td><td>Maintenance</td><td><span class="priority medium">Medium</span></td><td><span class="status pending">Pending</span></td><td>23 Aug 2026</td></tr>
+<tr><td>#CMP1003</td><td>Library access problem</td><td>Library</td><td><span class="priority low">Low</span></td><td><span class="status resolved">Resolved</span></td><td>20 Aug 2026</td></tr>
+<tr><td>#CMP1004</td><td>Hostel room fan issue</td><td>Hostel</td><td><span class="priority urgent">Urgent</span></td><td><span class="status assigned">Assigned</span></td><td>19 Aug 2026</td></tr>
+</tbody></table></div></section></main>
+<script src="script.js"></script>
+</body></html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit Complaint - OCMS</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="topbar"><div class="brand">OCMS</div><a href="student.html" class="logout">← Dashboard</a></header>
+<main class="form-page">
+<section class="card form-card">
+<h1>Submit a Complaint</h1><p class="muted">Provide accurate details so the concerned department can resolve your issue quickly.</p>
+<form id="complaintForm">
+<div class="form-grid">
+<label>Subject<input id="subject" required placeholder="Enter complaint subject"></label>
+<label>Category<select id="category" required><option value="">Select category</option><option>Academic</option><option>IT</option><option>Hostel</option><option>Library</option><option>Maintenance</option><option>Transport</option><option>Other</option></select></label>
+<label>Department<select id="department" required><option value="">Select department</option><option>Academic Department</option><option>IT Department</option><option>Hostel Department</option><option>Library</option><option>Maintenance</option></select></label>
+<label>Priority<select id="priority" required><option>Low</option><option selected>Medium</option><option>High</option><option>Urgent</option></select></label>
+</div>
+<label>Description<textarea id="description" required rows="7" placeholder="Describe your complaint in detail..."></textarea></label>
+<label>Attachment <input type="file" id="attachment"></label>
+<div class="form-actions"><a href="student.html" class="btn btn-outline">Cancel</a><button class="btn btn-primary" type="submit">Submit Complaint</button></div>
+<p id="message" class="success-message"></p>
+</form>
+</section></main>
+<script src="script.js"></script>
+</body></html>

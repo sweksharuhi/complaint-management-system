@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard - OCMS</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><div class="brand">OCMS</div><div>Welcome, Student <a href="index.html" class="logout">Logout</a></div></header>
+<div class="layout">
+<aside class="sidebar">
+  <a class="active" href="student.html">Dashboard</a>
+  <a href="complaint.html">Submit Complaint</a>
+  <a href="complaints.html">My Complaints</a>
+</aside>
+<main class="content">
+  <div class="page-title"><div><h1>Student Dashboard</h1><p>Manage and track your complaints.</p></div><a href="complaint.html" class="btn btn-primary">+ New Complaint</a></div>
+  <section class="stats">
+    <div class="stat"><span>Total Complaints</span><strong>12</strong></div>
+    <div class="stat"><span>Pending</span><strong>4</strong></div>
+    <div class="stat"><span>In Progress</span><strong>3</strong></div>
+    <div class="stat"><span>Resolved</span><strong>5</strong></div>
+  </section>
+  <section class="card">
+    <div class="card-head"><h2>Recent Complaints</h2><a href="complaints.html">View all</a></div>
+    <div class="table-wrap"><table><thead><tr><th>ID</th><th>Subject</th><th>Department</th><th>Priority</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>#CMP1001</td><td>Classroom projector not working</td><td>IT</td><td><span class="priority high">High</span></td><td><span class="status progress">In Progress</span></td></tr>
+      <tr><td>#CMP1002</td><td>Water cooler issue</td><td>Maintenance</td><td><span class="priority medium">Medium</span></td><td><span class="status pending">Pending</span></td></tr>
+      <tr><td>#CMP1003</td><td>Library access problem</td><td>Library</td><td><span class="priority low">Low</span></td><td><span class="status resolved">Resolved</span></td></tr>
+    </tbody></table></div>
+  </section>
+</main></div>
+</body></html>

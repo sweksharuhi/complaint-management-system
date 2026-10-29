@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard - OCMS</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="topbar"><div class="brand">OCMS Admin</div><a href="index.html" class="logout">Logout</a></header>
+<div class="layout">
+<aside class="sidebar"><a class="active" href="admin.html">Dashboard</a><a href="complaints.html">Complaints</a><a href="#">Departments</a><a href="#">Users</a></aside>
+<main class="content">
+<div class="page-title"><div><h1>Admin Dashboard</h1><p>Monitor complaints across departments.</p></div></div>
+<section class="stats">
+<div class="stat"><span>Total</span><strong>148</strong></div><div class="stat"><span>Pending</span><strong>31</strong></div><div class="stat"><span>In Progress</span><strong>42</strong></div><div class="stat"><span>Resolved</span><strong>75</strong></div>
+</section>
+<section class="card"><div class="card-head"><h2>Priority Overview</h2></div>
+<div class="priority-grid"><div><span class="priority low">Low</span><strong>36</strong></div><div><span class="priority medium">Medium</span><strong>61</strong></div><div><span class="priority high">High</span><strong>38</strong></div><div><span class="priority urgent">Urgent</span><strong>13</strong></div></div></section>
+<section class="card"><div class="card-head"><h2>Recent Complaints</h2><a href="complaints.html">View complaints</a></div>
+<div class="table-wrap"><table><thead><tr><th>ID</th><th>Student</th><th>Subject</th><th>Priority</th><th>Department</th><th>Status</th><th>Action</th></tr></thead>
+<tbody><tr><td>#CMP1004</td><td>Rahul</td><td>Hostel room fan issue</td><td><span class="priority urgent">Urgent</span></td><td>Hostel</td><td><span class="status assigned">Assigned</span></td><td><button class="small-btn">Assign</button></td></tr>
+<tr><td>#CMP1001</td><td>Priya</td><td>Projector not working</td><td><span class="priority high">High</span></td><td>IT</td><td><span class="status progress">In Progress</span></td><td><button class="small-btn">Update</button></td></tr></tbody></table></div></section>
+</main></div>
+</body></html>
